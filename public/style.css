@@ -1,0 +1,826 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    background-color: royalblue;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.social{
+    font-size: 16px;
+    word-spacing: 20px;
+    text-align: center;
+    margin-top:  10px;
+    margin-right:  10px;
+    overflow: hidden;
+    padding: 0 3px 0 3px;
+}
+.social>a{
+   text-decoration: none;
+   color: white;
+   cursor: pointer;
+   margin: 0;
+}
+header p{
+    color: white;
+    font-size: normal;
+    margin-top:  10px;
+}
+.btn{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.btn>button{
+    border: none;
+    color: white;
+    border: 2px solid white;
+    height: 30px;
+    background-color: white;
+    margin-left: 5px;
+   border-radius:  8px;
+   background-color: transparent;
+   transition: background-color 0.8s ease;
+   cursor: pointer;
+
+}
+.btn>button:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+ /* nav bar start here */
+ .navbar{
+    margin: 0; 
+    display: flex;
+    flex-wrap: wrap;  
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+ }
+ .navbar{
+    margin: 0; 
+    display: flex;
+    flex-wrap: wrap;  
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+ }
+ .navbar-t{
+     height: 0;
+     overflow: hidden;
+ }
+.navbar>img{
+     width: 230px;
+ }
+ .navbar-t>ul{
+     padding: 0;
+ }
+ .navbar>ul>li{
+     font-size: 14px;
+     cursor: pointer;
+     padding: 8px 12px;
+     border-radius: 50px;
+     position: relative;
+     display: inline-block;
+     color: rgb(0, 0, 0);     
+     transition: background-color 0.8s ease;
+ }
+ .active{
+    background-color: royalblue;
+    color: white !important;
+ }
+ .navbar>ul>li:hover{
+    background-color: royalblue;
+    color: white;
+ }
+ .about-drop , .training-drop , .donate-drop{
+   width: 180px;
+   position: absolute;
+   top: 50px;
+   left: 0;
+   background-color: whitesmoke;
+   padding: 0;
+   height: 0;
+   overflow: hidden;
+   transition: height 0.4s ease;
+   font-size: small;
+ }
+ .about-drop>li, .project-drop>li , .donate-drop>li{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    padding-left: 20px;
+    transition: all 0.5s ease;
+    color: rgba(66, 64, 64, 0.829);
+ }
+ .about-drop>li:hover, .project-drop>li:hover , .donate-drop>li:hover , .ramzan-drop>li:hover, .medical-drop>li:hover{
+     background-color: royalblue;
+     color: white;
+     padding-left: 30px;
+ }
+.about:hover .about-drop{
+    height: 93px;
+}
+.service-drop{
+   left: -100px;
+   top: 50px;
+   height: 0;
+   width: 220px;
+   padding: 0;
+   overflow: hidden;
+   font-size: small;
+   position: absolute;
+   transition: height 0.4s ease;
+   background-color: whitesmoke;
+}
+.service-drop>li{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    padding-left: 25px;
+    transition: all 0.5s ease;
+    color: rgba(66, 64, 64, 0.829);
+ }
+ .service-drop i{
+     float: right;
+     font-size: 15px;
+ }
+ .service-drop>li:hover{
+     background-color: royalblue;
+     color: white;
+     padding-left: 40px;
+ }
+.service:hover .service-drop{
+    height: 372px;
+}
+.service:hover .service-drop>li{
+    display: block;
+}
+.service-drop:hover{
+    overflow: visible;
+}
+ .edu-drop , .training-drop , .medical-drop{
+    top: 0;
+    padding: 0;
+    left: 0px;
+    width: 190px;
+    font-size: small;
+    position: absolute;
+    transition: height 0.4s ease;
+    z-index: -1;
+    background-color: whitesmoke;
+
+ }
+ .about-drop>li:hover{
+    background-color: royalblue;
+    color: white;
+    padding-left: 40px;
+}
+
+ .edu-drop>li, .training-drop>li , .ramzan-drop>li , .medical-drop>li{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    height: 0;
+    padding: 8px;
+    padding-left: 25px;
+    transition: all 0.4s ease;
+    color: rgba(66, 64, 64, 0.829);
+    background-color: whitesmoke;
+ }
+
+ .edu-drop>li:hover{
+    background-color: royalblue;
+    color: white;
+    padding-left: 40px;
+}
+ .edu:hover .edu-drop{
+    left: 221px;
+    z-index: 1;
+}
+.edu:hover .edu-drop>li{
+    height: 15px;
+}
+.training-drop>li:hover{
+    background-color: royalblue;
+    color: white;
+    padding-left: 40px;
+}
+.training:hover .training-drop{
+    left: 191px;
+    width: 160px;
+    z-index: 1;
+    overflow: visible;
+   
+}
+.training:hover .training-drop>li{
+    height: 15px;
+}
+.project{
+    position: relative;
+}
+.project-drop{
+    width: 180px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: whitesmoke;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
+    font-size: small;
+}
+.project:hover .project-drop{
+    height: 62px;
+}
+.donate-drop{
+    width: 160px;
+    position: absolute;
+    top: 50px;
+    left: -100px;
+    background-color: whitesmoke;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
+    font-size: small;
+  }
+.donate-drop i{
+    float: right;
+    font-size: 16px;
+}
+.donate:hover .donate-drop{
+    height: 217px;
+}
+.donate-drop:hover{
+    overflow: visible;
+}
+.ramzan{
+    position: relative;
+}
+.ramzan-drop{
+    position: absolute;
+    top: -50px;
+    left: 0;
+    padding: 0;
+    width: 160px;
+    font-size: small;
+    z-index: -1;
+    transition: height 0.4s ease;
+    background-color: whitesmoke;
+
+ }
+.ramzan:hover .ramzan-drop{
+    top: 0;
+    left: -161px;
+    z-index: 1;
+}
+.ramzan:hover .ramzan-drop>li{
+    height: 16px;
+}
+#left{
+    display: none;
+}
+.ramzan:hover #left{
+     display: inline;
+}
+.ramzan:hover #right{
+    display: none;
+}
+.medical{
+    position: relative;
+}
+.medical:hover .medical-drop{
+    width: 300px;
+    left: 221px;
+    z-index: 1;
+    overflow: visible;
+}
+.welfare:hover .medical-drop{
+    width: 180px;
+    left: 221px;
+    z-index: 1;
+    overflow: visible;
+   
+}
+.quran:hover .medical-drop{
+    width: 210px;
+    left: 221px;
+    z-index: 1;
+    overflow: visible;
+   
+}
+.medical:hover .medical-drop>li{
+    height: 15px;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+      width: 100%;
+      z-index: 6;
+  }
+
+
+ .slider{
+  overflow: hidden;
+    height: 40vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: -1;
+}
+.one{
+    width: 100%;
+    height: 40vw;
+    animation: z 3s ease-out 2s 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.two{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 40vw;
+    z-index: -1;
+    animation: zt 3s linear 2s 1;
+}
+.three{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40vw;
+    z-index: -2;
+    animation: zth 1s linear 0s 0;
+}
+.mar{
+    width: 100%;
+    text-align: center;
+}
+.mar marquee{
+    background-color: royalblue;
+    color: white;
+    width: 85%;
+    padding: 5px;
+    margin: 12px auto 12px auto;
+    word-spacing: 5px;
+}
+marquee>strong{
+    color: greenyellow;
+}
+.intro{
+    background-color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.intro1 , .intro2{
+    color: rgb(47, 83, 189);
+    font-size: 35px;
+    font-family: serif;
+    font-weight: bold;
+}
+.intro2{
+    color: rgb(23, 145, 7);
+}
+.intro b{
+    color: rgb(23, 145, 7);
+    margin-left:8px;
+    margin-right:8px;
+}
+.intro-head>img{
+    width: 35px;
+    margin-top: 10px;
+}
+.intro>p{
+    color: rgba(48, 46, 46, 0.664);
+    width: 65%;
+    text-align: justify;
+    padding: 8px;
+    margin: 12px auto 0 auto;
+    line-height: 25px;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+}
+.detail{
+    background-color: rgb(32, 78, 218);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    padding: 50px 0 50px 0;
+}
+.detail-content{
+    text-align: center;
+    width: 250px;
+    margin-top: 25px;
+    font-family: serif;
+    font-weight: bold;
+    /* background-color: brown; */
+}
+.detail-content h1{
+    font-size: 40px;
+    font-family: cursive;
+}
+.detail-content P{
+    font-size: 18px;
+}
+.detail-content b{
+    color: rgb(32, 238, 4);
+}
+.work{
+    background-color: whitesmoke;
+}
+.work-content{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.work-card{
+   padding: 20px;
+   width: 25%;
+    background-color: white;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16);
+    color: rgb(47, 83, 189);
+    margin: 20px 5px 20px 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.events marquee{
+     text-align:center;
+     color: grey;
+     height: 220px;
+}
+.m-project{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.events h2{
+    color: rgb(47, 83, 189);
+    border-bottom: 1px solid rgb(23, 145, 7);
+}
+.project-left{
+    margin: 0;
+    width: 73%;
+}
+.events{
+    width:25%;
+    text-align: center;
+    overflow: hidden;
+}
+.project-left h2{
+    width: 95%;
+    text-align: center;
+    color: rgb(47, 83, 189);
+    border-bottom: 1px solid rgb(23, 145, 7);
+}
+
+.proj-cards{
+    background: #33333310;
+    padding: 20px;
+    width: 40%;
+    margin: 20px;
+    color: rgb(47, 83, 189);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.proj-cards img{
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+.gellery .intro{
+  background-color: white;
+}
+
+.proj-card-m{
+    display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 30px auto 0 auto;
+}
+.img-card{
+    margin: 5px;
+    width: 18%;
+   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16);
+}
+.img-card :hover{
+   transform: scale(1.2);
+   transition: all 0.3s ease-in-out;
+   z-index: 1; 
+}
+.img-card img{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #25272e;
+    padding: 50px 0 0 0;
+}
+footer ul{
+    padding: 0;
+}
+
+.footer-1 li, .footer-1 p{
+  list-style: none;
+  margin-top: 8px;
+  color: rgba(245, 245, 245, 0.678);
+}
+
+.footer-1 i{
+    color:green;
+  }
+
+  .footer-2>h3{
+      margin: 0;
+      color: white;
+      padding: 10px 0;
+      border-bottom: 2px solid green;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  .footer-2{
+    width: 20%;
+    padding: 0 0 200px 0;
+  }
+.footer-3{
+    padding: 0 0 100px 0;
+}
+.footer-3>h3{
+    margin: 0;
+    color: white;
+    padding: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer-3 li{
+    margin: 0;
+    display: inline-block;
+    background-color: royalblue;
+    padding: 7px 5px;
+    width: 28px;
+    height: 25px;
+    border-radius: 28px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+.footer-3 li a{
+   text-decoration: none;
+   color: white;
+   font-size: large;
+}
+.footer div{
+    margin-right: 20px;
+    width: 30%;
+}
+.copyright{
+    width: 100%;
+    background-color: royalblue;
+    padding: 15px 0 15px 9vw;
+    color: white;
+    margin: 0;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 1178px){
+    .project-left{
+        width: 80%;
+    }
+    .events{
+        width:50%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1073px){
+    .project-left{
+        width: 100%;
+    }
+    .events{
+        width:70%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 1400px){
+    .proj-cards{
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 1015px){
+    .detail-content{
+        width: 350px;
+       
+    }
+    .img-card{
+        width: 200px;
+    }
+    .imgs{
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 996px){
+    .work-card{
+        width: 40%;
+     }
+     .events h2{
+        padding-top: 20px;
+    }
+    header p{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 896px){
+
+     header p{
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+    .footer-2{
+        width: 400px;
+    }
+    .footer-2{
+        padding: 0;
+        margin-top: -150px;
+    }
+    .footer-3{
+        padding: 0;
+        margin-top: -150px;
+        margin-left: 200px;
+    }
+}
+@media only screen and (max-width: 912px){
+    .navbar-t:hover {
+            height:400px !important;
+            transition: height 0.3s ease-in-out;
+            overflow: auto !important;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar-t>.fa {
+         position: absolute;
+         top:20px;
+         right: 100px;
+         font-size: 25PX;
+         z-index: 1;
+    }
+    .navbar-t{
+        margin: 0; 
+        background-color: white;
+        padding: 0;
+        font-family: sans-serif;
+        height: 64px;
+        overflow: auto;
+        position: relative;
+     }
+     .navbar-t>img{
+         width: 230px;
+     }
+     .navbar-t ul{
+         padding: 0;
+         width: 100%;
+         margin: 0;
+     }
+     .navbar-t ul li{
+         font-size: 18px;
+         cursor: pointer;
+         padding: 10px 20px;
+         color: rgba(0, 0, 0, 0.753);     
+         transition: background-color 0.8s ease;
+         position: relative;
+         border-bottom: 1px solid rgba(128, 128, 128, 0.253);
+         background-color: white;
+     }
+     .navbar-t ul li i{
+        border-left: 1px solid rgba(128, 128, 128, 0.253);
+        border-right: 1px solid rgba(128, 128, 128, 0.253);    
+        font-size: 25px !important; 
+        padding: 8px 20px;
+        position: absolute;
+        top:0;
+        right: 0;
+     }
+     .active{
+        background-color: royalblue;
+        color: white;
+        border-bottom:1px solid white ;
+     }
+     .navbar-t ul li:hover{
+        background-color: royalblue;
+        color: white;
+        border-color: white;
+        padding-left: 25px;
+     }
+     .navbar-t ul li:hover i{
+        background-color: royalblue;
+        color: white;
+        border-color: white;
+     }
+     .about-t , .service-t, .edu-t ,.training-t , .wel-about-t{
+         position: relative;
+         height: 20px;
+         overflow: hidden; 
+        transition: height 0.2s ease-in-out;     
+     }
+    
+     .about-drop-t , .service-drop-t , .edu-drop-t , .training-drop-t,  .wel-about-drop-t{
+         text-decoration: none;
+         list-style: none;
+         position: absolute;
+         top: 41px;
+         left: 0;   
+     }
+    
+     .about-drop-t li:hover ,.service-drop-t li:hover ,.wel-about-drop-t li:hover{
+        border: 2px solid royalblue;
+        background-color: white;
+        color: royalblue;
+    }
+    .about-t:hover{
+        height: 150px;
+        overflow: auto;
+        transition: height 0.2s ease-in-out;
+    }
+    .service-t:hover{
+        height: 525px;
+        overflow: auto;
+        transition: height 0.2s ease-in-out;
+    }
+    .wel-about-t:hover{
+        height: 108px;
+        overflow: auto;
+        transition: height 0.2s ease-in-out;
+    }
+}
+@media only screen and (max-width: 815px){
+   .footer-1{
+       width: 100%;
+       text-align: center;
+   }
+   .footer-1 li{
+   display: inline-block;
+   margin: 10px;
+}
+    .footer-2{
+      width:  75%;
+      margin: 0;
+      padding: 0;
+   }
+   .footer-3{
+       width: 100%;
+       padding: 0;
+       margin-top: 50px;
+       margin-left: 12vw;
+   }
+}
+@media only screen and (max-width: 700px){
+    .work-card{
+        width: 100%;
+     }
+}
+@media only screen and (max-width: 538px){
+    .events{
+        width: 90%;
+    }
+}
