@@ -701,7 +701,7 @@ footer ul{
     .navbar-t>.fa {
          position: absolute;
          top:20px;
-         right: 100px;
+         right: 20px;
          font-size: 25PX;
          z-index: 1;
     }
